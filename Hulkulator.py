@@ -23,9 +23,10 @@ def loop ():
         what=input("What do you want to do? (+, -, *, /)")
         if what == "+" or what == "-" or what == "*" or what == "/":
             break
-        print (Fore.BLACK)
-        print (Back.CYAN)
-        print ("What are you talking about? Let's try again!")
+        else:
+            print (Fore.BLACK)
+            print (Back.CYAN)
+            print ("What are you talking about? Let's try again!")
     while True:
         try:
             print (Fore.BLACK)
@@ -35,7 +36,7 @@ def loop ():
         except (TypeError, ValueError):
             print (Fore.BLACK)
             print (Back.CYAN)
-            print ("Are you crazy? This is not a number!")
+            print ("Have you ever gone to school?")
     if what == "+":
         c=a+b
         print (Fore.BLACK)
@@ -65,7 +66,7 @@ while True:
     or more == "yES" or more == "yeS" or more == "yEs" or more == "YeS"
     or more == "Y" or more == "y"):
         loop()
-    if (more == "no" or more == "No" or more == "NO" or more == "nO"
+    elif (more == "no" or more == "No" or more == "NO" or more == "nO"
       or more == "N" or more == "n"):
         print (Fore.BLACK)
         print (Back.RED)
